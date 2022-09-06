@@ -1,9 +1,15 @@
 /* Import font from google */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 
 body{
-   background-color: rgb(200,200,200);
+   width: 100%;
+   background-color: #ccc;
    font-family: sans-serif;
    margin: 0;
    padding: 0;
@@ -12,33 +18,40 @@ h1,h2,h3,h4,h5,h6{
    font-family: 'Open Sans', sans-serif;
 }
 #topo, #menu,.destaques, section{
-   width: 900px;
+   width: 100%;
    margin:0 auto;
 }
-#topo h1{
-   animation:introducao 2s linear infinite alternate;
-   -webkit-animation:introducao 2s linear infinite alternate;
-   -moz-animation:introducao 2s linear infinite alternate;
+
+/*************TOPO***************/
+
+#topo h1
+{
+   padding: 20px 0;
+   text-align: center;
 }
-@-webkit-keyframes introducao{
-   0%{color: red; -webkit-transform:rotate(0deg);}
-   25%{color: blue; -webkit-transform:rotate(5deg) scale(1.2);}
-   50%{color: green; -webkit-transform:rotate(0deg);}
-   75%{color: purple; -webkit-transform:rotate(-5deg) scale(1.2);}
-   100%{color: red; -webkit-transform:rotate(0deg);}
+#topo h2{
+   display: none;
+   text-align: center;
 }
-@keyframes introducao{
-   0%{color: red; -webkit-transform:rotate(0deg);}
-   25%{color: blue; -webkit-transform:rotate(5deg) scale(1.2);}
-   50%{color: green; -webkit-transform:rotate(0deg);}
-   75%{color: purple; -webkit-transform:rotate(-5deg) scale(1.2);}
-   100%{color: red; -webkit-transform:rotate(0deg);}
-}
+
+/*************MENU**************/
+
 #menu li{
    display:inline;
+   text-align: center;
+   margin-left: 5px;
 }
+
+#menu ul{
+   width: 80%;
+   margin:0 auto;
+   padding-bottom: 20px;
+   text-align: center;
+}
+
+/**********DESTAQUE***************/
 .destaques li{
-   width: 50%;
+   width: 100%;
    float: left;
    text-align: center;
    list-style: none;
@@ -55,6 +68,10 @@ h1,h2,h3,h4,h5,h6{
 .destaques li strong{
    width: 100%;
    display: block;
+}
+#destaque1
+{
+   text-align: center;
 }
 .center{
    text-align: center;
@@ -93,6 +110,9 @@ button{
    -moz-border-radius: 5px;
    border-radius: 5px;
 }
+
+/*********FOOTER******/
+
 #rodape{
    width: 100%;
    background-color: #333;
@@ -100,6 +120,51 @@ button{
    float: left;
    text-align: center;
 }
-#rodape li {display: inline;
+#rodape ul
+{
+   padding: 20px 0;
+}
+#rodape li 
+{
+   display: inline;
 }
 
+/******MEDIA QUERYS****/
+@media (min-width: 576px)
+{
+#topo h1{
+   animation:introducao 2s linear infinite normal;
+   -webkit-animation:introducao 2s linear infinite normal;
+   -moz-animation:introducao 2s linear infinite normal;
+}
+@-webkit-keyframes introducao{
+   0%{color: gray; -webkit-transform:rotate(0deg);}
+   25%{color: darkslategray; -webkit-transform:rotate(0deg) scale(1.2);}
+   50%{color: cadetblue; -webkit-transform:rotate(0deg);}
+   75%{color: cornflowerblue; -webkit-transform:rotate(0deg) scale(1.2);}
+   100%{color: darkcyan; -webkit-transform:rotate(0deg);}
+}
+@keyframes introducao{
+   0%{color: gray; -webkit-transform:rotate(0deg);}
+   25%{color: darkslategray; -webkit-transform:rotate(0deg) scale(1.2);}
+   50%{color: cadetblue; -webkit-transform:rotate(0deg);}
+   75%{color: cornflowerblue; -webkit-transform:rotate(0deg) scale(1.2);}
+   100%{color: darkcyan; -webkit-transform:rotate(0deg);}
+}
+
+#topo h2{
+   display: block;
+   font-size: 1.2em;
+   padding: 20px 0;
+   text-align: center;
+}
+
+/*************DESTAQUE************/
+.destaques li{
+   width: 50%;
+   float: left;
+   text-align: center;
+   list-style: none;
+   padding: 20px 0;
+}
+}
