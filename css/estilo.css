@@ -168,3 +168,79 @@ button{
    padding: 20px 0;
 }
 }
+@media (min-width: 576px) and (max-width: 767.98px)
+{
+   #topo h1{
+      animation:introducao 2s linear infinite normal;
+      -webkit-animation:introducao 2s linear infinite normal;
+      -moz-animation:introducao 2s linear infinite normal;
+   }
+   @-webkit-keyframes introducao{
+      0%{color: gray; -webkit-transform:rotate(0deg);}
+      25%{color: darkslategray; -webkit-transform:rotate(0deg) scale(1.2);}
+      50%{color: cadetblue; -webkit-transform:rotate(0deg);}
+      75%{color: cornflowerblue; -webkit-transform:rotate(0deg) scale(1.2);}
+      100%{color: darkcyan; -webkit-transform:rotate(0deg);}
+   }
+   @keyframes introducao{
+      0%{color: gray; -webkit-transform:rotate(0deg);}
+      25%{color: darkslategray; -webkit-transform:rotate(0deg) scale(1.2);}
+      50%{color: cadetblue; -webkit-transform:rotate(0deg);}
+      75%{color: cornflowerblue; -webkit-transform:rotate(0deg) scale(1.2);}
+      100%{color: darkcyan; -webkit-transform:rotate(0deg);}
+   }
+   
+   #topo h2{
+      display: block;
+      font-size: 1.4em;
+      padding: 10px 0;
+      text-align: center;
+   }
+   
+   /*************DESTAQUE************/
+   .destaques li{
+      width: 32%;
+      float: left;
+      text-align: center;
+      list-style: none;
+      padding: 40px 0;
+   }
+}
+@media (min-width: 768px) and (max-width: 991.98px)
+{
+   #topo h1{
+      animation:introducao 2s linear infinite normal;
+      -webkit-animation:introducao 2s linear infinite normal;
+      -moz-animation:introducao 2s linear infinite normal;
+   }
+   @-webkit-keyframes introducao{
+      0%{color: gray; -webkit-transform:rotate(0deg);}
+      25%{color: darkslategray; -webkit-transform:rotate(0deg) scale(1.2);}
+      50%{color: cadetblue; -webkit-transform:rotate(0deg);}
+      75%{color: cornflowerblue; -webkit-transform:rotate(0deg) scale(1.2);}
+      100%{color: darkcyan; -webkit-transform:rotate(0deg);}
+   }
+   @keyframes introducao{
+      0%{color: gray; -webkit-transform:rotate(0deg);}
+      25%{color: darkslategray; -webkit-transform:rotate(0deg) scale(1.2);}
+      50%{color: cadetblue; -webkit-transform:rotate(0deg);}
+      75%{color: cornflowerblue; -webkit-transform:rotate(0deg) scale(1.2);}
+      100%{color: darkcyan; -webkit-transform:rotate(0deg);}
+   }
+   
+   #topo h2{
+      display: block;
+      font-size: 1.7em;
+      padding: 20px 0;
+      text-align: center;
+   }
+   
+   /*************DESTAQUE************/
+   .destaques li{
+      width: 25%;
+      float: left;
+      text-align: center;
+      list-style: none;
+      padding: 20px 0;
+   }
+}
